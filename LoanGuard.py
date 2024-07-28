@@ -14,15 +14,15 @@ borrower_id = st.text_input('Borrower ID')
 credit_score = st.number_input('Enter Credit Score', min_value=0, max_value=850, value=650)
 
 # Annual Income
-annual_income = st.number_input('Enter Annual Income', min_value=0, value=0)
+annual_income = st.number_input('Enter Annual Income', min_value=0, max_value=20000, value=10000)
 
 # Loan Amount
-loan_amount = st.number_input('Enter Loan Amount', min_value=0, value=0)
+loan_amount = st.number_input('Enter Loan Amount', min_value=0, max_value=10000, value=8000)
 
 # Payment History
-on_time_payments = st.number_input('Number of On-time Payments', min_value=0, value=0)
-late_payments = st.number_input('Number of Late Payments', min_value=0, value=0)
-defaulted_payments = st.number_input('Number of Defaulted Payments', min_value=0, value=0)
+on_time_payments = st.number_input('Number of On-time Payments', min_value=0, max_value=100, value=0)
+late_payments = st.number_input('Number of Late Payments', min_value=0, max_value=100, value=0)
+defaulted_payments = st.number_input('Number of Defaulted Payments', min_value=0, max_value=15, value=0)
 
 # Prediction (Dummy Implementation)
 # Replace the following code with actual prediction logic
