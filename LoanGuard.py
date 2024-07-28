@@ -46,5 +46,4 @@ st.write("""
 This app is for educational purposes only and does not provide actual credit risk assessments.
 """)
 
-if __name__ == '__main__':
-    st.run()
+# Note: No need for `st.run()` or `if __name__ == '__main__':` in Streamlit scripts.
