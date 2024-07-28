@@ -20,9 +20,12 @@ Welcome to LoanGuard! This application is designed to help predict the credit ri
    git clone https://github.com/yourusername/loanguard.git
    cd loanguard
 
+2.**Create a virtual environment**:
+
 python -m venv env
 source env/bin/activate  # On Windows use `env\Scripts\activate`
 
+3. **Install the required packages**:
 pip install -r requirements.txt
 
 streamlit run loanguard.py
